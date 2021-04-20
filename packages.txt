@@ -3,3 +3,4 @@ sudo apt-get install plotly
 sudo apt-get install fpdf
 sudo apt-get install pybase64
 sudo apt-get install xlsxwriter
+sudo apt-get install xlrd
