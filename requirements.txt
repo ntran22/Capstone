@@ -3,3 +3,4 @@ plotly
 fpdf
 pybase64
 xlsxwriter
+xlrd
