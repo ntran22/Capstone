@@ -2,3 +2,4 @@ streamlit
 plotly
 fpdf
 pybase64
+xlsxwriter
