@@ -4,3 +4,4 @@ fpdf
 pybase64
 xlsxwriter
 xlrd
+openpyxl
