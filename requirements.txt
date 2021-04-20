@@ -6,4 +6,4 @@ xlsxwriter
 xlrd
 openpyxl
 psutil
--c plotly plotly-orca
+orca
