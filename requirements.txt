@@ -7,3 +7,4 @@ xlrd
 openpyxl
 psutil
 orca
+plotly plotly-orca
