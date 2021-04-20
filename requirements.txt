@@ -5,3 +5,4 @@ pybase64
 xlsxwriter
 xlrd
 openpyxl
+psutil
