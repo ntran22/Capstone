@@ -7,3 +7,4 @@ sudo apt-get install xlrd
 sudo apt-get install openpyxl
 sudo apt-get install psutil
 sudo apt-get conda install -c plotly plotly-orca
+sudo apt-get conda install orca
