@@ -9,7 +9,6 @@ import plotly.express as px
 import plotly.graph_objects as go
 from io import BytesIO
 import numpy as np
-#import win32com.client as win32     # used to work with excel from python
 from fpdf import FPDF
 from tempfile import NamedTemporaryFile
 from plotly.subplots import make_subplots
