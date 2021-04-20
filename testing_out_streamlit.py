@@ -441,7 +441,6 @@ def  writeToWorksheet(wr,df,name):
     
     
 # Function that converts the pandas performance_table df to an excel fe
-#from SJCoC_Worksheet_Format import writeToWorksheet  # Jose's formatting function
 def to_excel(df):
     output = BytesIO()
     writer = pd.ExcelWriter(output, engine='xlsxwriter')
