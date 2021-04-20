@@ -5,3 +5,4 @@ sudo apt-get install pybase64
 sudo apt-get install xlsxwriter
 sudo apt-get install xlrd
 sudo apt-get install openpyxl
+sudo apt-get install psutil
