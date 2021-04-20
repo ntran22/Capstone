@@ -6,4 +6,4 @@ xlsxwriter
 xlrd
 openpyxl
 psutil
-$ conda install -c plotly plotly-orca
+-c plotly plotly-orca
