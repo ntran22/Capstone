@@ -30,6 +30,8 @@ st.set_option('deprecation.showfileUploaderEncoding', False)
 # Title of the web app
 st.markdown("<h1 style='text-align: center; color: black;'>SJCoC Report</h1>", unsafe_allow_html=True)
 st.markdown("<h3 style='text-align: center; color: black;'>University of the Pacific Data Science Team</h3>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center; color: black;'>Team</h3>", unsafe_allow_html=True)
+
 
 # =============================================================================
 
@@ -43,7 +45,11 @@ def performance(d_entry, d_exit):
     # Removing duplicate rows in the entry and exit data
     d_entry = d_entry.drop_duplicates()
     d_exit = d_exit.drop_duplicates()
-
+    
+    # Focusing only on the attributes provided in the sample data
+    d_entry = d_entry[["Unique ID", "Enrollment Start Date", "Enrollment Exit Date", "DOB", "Household ID", "Gender", "Race", "Ethnicity", "Relationship to Head of Household", "Housing Move-In Date"]]
+    d_exit = d_exit[["Unique ID", "Enrollment Start Date", "Enrollment Exit Date", "DOB", "Household ID", "Gender", "Race", "Ethnicity", "Destination", "Specify Other Exit Destination"]]
+    
     # Identifying the column names that the entry and exit data have in common
     common_columns = list(d_entry.columns.intersection(d_exit.columns))
 
