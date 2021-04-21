@@ -903,20 +903,30 @@ if uploaded_file:
     # Taking all the visuals and placing them into a downloadable pdf file link
     
     # Creating a list that contains all the figures (8 figures, excluding the sankey diagram)
-    figs = [fig, fig2, fig3, fig4, fig5, fig6, fig7, fig8]
+    figs = pd.DataFrame([fig, fig2, fig3, fig4, fig5, fig6, fig7, fig8], columns=["figs"])
 
     # This for loop creates a new pdf page and places one chart per pdf page
     pdf = FPDF()
-    for i in figs:
-        pdf.add_page() # creates a new pdf page each iteration
+    
+    def fig_pdf(i):
+           pdf.add_page
+           with NamedTemporaryFile(delete=False, suffix=".png") as tmpfile:
+               i.write_image(tmpfile.name)               # writes the chart as a png file type
+               pdf.image(tmpfile.name, 10, 10, 175, 180) # Adjusts the chart size on the pdf
+    
+    PDF = figs.apply(fig_pdf, axis=1)
+    
+#     for i in figs:
+#         pdf.add_page() # creates a new pdf page each iteration
         
-        # Creation of a temporary file that will hold the charts (in memory until the download button is clicked)
-        with NamedTemporaryFile(delete=False, suffix=".png") as tmpfile:
-                i.write_image(tmpfile.name)               # writes the chart as a png file type
-                pdf.image(tmpfile.name, 10, 10, 175, 180) # Adjusts the chart size on the pdf
+#         # Creation of a temporary file that will hold the charts (in memory until the download button is clicked)
+#         with NamedTemporaryFile(delete=False, suffix=".png") as tmpfile:
+#                 i.write_image(tmpfile.name)               # writes the chart as a png file type
+#                 pdf.image(tmpfile.name, 10, 10, 175, 180) # Adjusts the chart size on the pdf
 
     # Creating a download link for the temporary file that is holding the 8 charts
-    html = create_pdf_download_link(pdf.output(dest="S").encode("latin-1"))
+    #html = create_pdf_download_link(pdf.output(dest="S").encode("latin-1"))
+    html = create_pdf_download_link(PDF.output(dest="S").encode("latin-1"))
     
     #Creating a download link of the charts report pdf that will be visible on streamlit app
     st.markdown(html, unsafe_allow_html=True)
