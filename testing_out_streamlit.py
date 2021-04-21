@@ -247,16 +247,7 @@ def performance(d_entry, d_exit):
 
 
 # =============================================================================
-# =============================================================================
-# # Original Function to convert the pandas performance_table df to an excel file
-# def to_excel(df):
-#     output = BytesIO()
-#     writer = pd.ExcelWriter(output, engine='xlsxwriter')
-#     df.to_excel(writer, index=False, sheet_name='Sheet1')
-#     writer.save()
-#     processed_data = output.getvalue()
-#     return(processed_data)
-# =============================================================================
+
 def  writeToWorksheet(wr,df,name):
     def colnum_string(n):
         string = ""
