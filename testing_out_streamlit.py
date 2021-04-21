@@ -30,7 +30,6 @@ st.set_option('deprecation.showfileUploaderEncoding', False)
 # Title of the web app
 st.markdown("<h1 style='text-align: center; color: black;'>SJCoC Report</h1>", unsafe_allow_html=True)
 st.markdown("<h3 style='text-align: center; color: black;'>University of the Pacific Data Science Team</h3>", unsafe_allow_html=True)
-st.markdown("<h3 style='text-align: center; color: black;'>Team</h3>", unsafe_allow_html=True)
 
 
 # =============================================================================
