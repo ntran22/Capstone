@@ -907,14 +907,13 @@ if uploaded_file:
 
     # This for loop creates a new pdf page and places one chart per pdf page
     pdf = FPDF()
-    
     for i in figs:
         pdf.add_page() # creates a new pdf page each iteration
         
         # Creation of a temporary file that will hold the charts (in memory until the download button is clicked)
         with NamedTemporaryFile(delete=False, suffix=".png") as tmpfile:
-                i.write_image(tmpfile.name)               # writes the chart as a png file type
-                pdf.image(tmpfile.name, 10, 10, 175, 180) # Adjusts the chart size on the pdf
+            i.write_image(tmpfile.name)               # writes the chart as a png file type
+            pdf.image(tmpfile.name, 10, 10, 175, 180) # Adjusts the chart size on the pdf
 
     # Creating a download link for the temporary file that is holding the 8 charts
     html = create_pdf_download_link(pdf.output(dest="S").encode("latin-1"))
