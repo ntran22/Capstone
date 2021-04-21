@@ -623,8 +623,8 @@ if uploaded_file:
     
     # The for loop reads the excel files by sheet name and converts it to a pd dataframe
     for file in uploaded_file:
-        Entry = pd.read_excel(file,sheet_name ='Entry data').iloc[:,:10]
-        Exit = pd.read_excel(file,sheet_name ='Exit data').iloc[:,:10]
+        Entry = pd.read_excel(file,sheet_name ='Entry data')
+        Exit = pd.read_excel(file,sheet_name ='Exit data')
         
         d_entry.append(Entry)
         d_exit.append(Exit)
