@@ -3,7 +3,6 @@
 **SJCoC Reporting Web Application**: https://share.streamlit.io/ntran22/capstone/main/testing_out_streamlit.py
 <br>
 <br>
-<br>
 
 File upload requirements:
  - File sizes must be smaller than 200MB each
