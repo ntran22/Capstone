@@ -812,20 +812,7 @@ if uploaded_file:
             xanchor="left",
             x=0.8)
     )
-#     fig4.update_layout(
-#         height=705,
-#         width = 705,
-#         showlegend=True,
-#         title_text="Gender Demographics",
-#         plot_bgcolor='white',
-#         legend=dict(
-#                 orientation="h",
-#                 yanchor="top",
-#                 y= .515,
-#                 xanchor="center",
-#                 x=.5
-#             )
-#     )
+
     
     # ===================================================
     # Plot 5: Creating the race demographic pie chart
@@ -890,7 +877,7 @@ if uploaded_file:
         height=710,
         width = 710,
         showlegend=True,
-        title_text="Race Demographics",
+        title_text="Ethnicity Demographics",
         plot_bgcolor='white',
         legend=dict(
         yanchor="top",
@@ -898,20 +885,6 @@ if uploaded_file:
         xanchor="left",
         x=0.8)
     )
-#     fig6.update_layout(
-#         height=705,
-#         width = 705,
-#         showlegend=True,
-#         title_text="Ethnicity Demographics",
-#         plot_bgcolor='white',
-#         legend=dict(
-#                 orientation="h",
-#                 yanchor="top",
-#                 y= .525,
-#                 xanchor="center",
-#                 x=.5
-#             )
-#     )
     
     
    # =================================================== 
