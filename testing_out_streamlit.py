@@ -837,11 +837,16 @@ if uploaded_file:
     fig5.update_traces(hoverinfo='label+percent',
                       marker=dict(colors=colors),row=1, col=1)
     fig5.update_layout(
-        height=705,
-        width = 705,
+        height=710,
+        width = 710,
         showlegend=True,
         title_text="Race Demographics",
         plot_bgcolor='white',
+        legend=dict(
+        yanchor="top",
+        y=0.99,
+        xanchor="left",
+        x=0.8)
     )
     
     # ===================================================
