@@ -831,7 +831,7 @@ if uploaded_file:
                values=value), 
                row=1, col=1)
     fig5.add_trace(
-        go.Table(columnwidth = [300,90],
+        go.Table(columnwidth = [300,100],
                  header=dict(values=['Race', 'Client Count']),
                  cells=dict(values=[race,value],align='center')), 
                  row=2, col=1)
