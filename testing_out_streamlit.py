@@ -794,25 +794,38 @@ if uploaded_file:
                values=value), 
                row=1, col=1)
     fig4.add_trace(
-        go.Table(header=dict(values=['Gender', 'Client Count']),
-             cells=dict(values=[gender,value],align='center')), 
+        go.Table(columnwidth = [300,100],
+                 header=dict(values=['Gender', 'Client Count']),
+                 cells=dict(values=[gender,value],align='center')), 
                  row=2, col=1)
     fig4.update_traces(hoverinfo='label+percent',
                       marker=dict(colors=colors),row=1, col=1)
     fig4.update_layout(
-        height=705,
-        width = 705,
+        height=710,
+        width = 710,
         showlegend=True,
         title_text="Gender Demographics",
         plot_bgcolor='white',
         legend=dict(
-                orientation="h",
-                yanchor="top",
-                y= .515,
-                xanchor="center",
-                x=.5
-            )
+            yanchor="top",
+            y=0.99,
+            xanchor="left",
+            x=0.8)
     )
+#     fig4.update_layout(
+#         height=705,
+#         width = 705,
+#         showlegend=True,
+#         title_text="Gender Demographics",
+#         plot_bgcolor='white',
+#         legend=dict(
+#                 orientation="h",
+#                 yanchor="top",
+#                 y= .515,
+#                 xanchor="center",
+#                 x=.5
+#             )
+#     )
     
     # ===================================================
     # Plot 5: Creating the race demographic pie chart
@@ -838,31 +851,17 @@ if uploaded_file:
     fig5.update_traces(hoverinfo='label+percent',
                       marker=dict(colors=colors),row=1, col=1)
     fig5.update_layout(
-        height=705,
-        width = 705,
+        height=710,
+        width = 710,
         showlegend=True,
         title_text="Race Demographics",
         plot_bgcolor='white',
         legend=dict(
-                orientation="h",
-                yanchor="top",
-                y= .515,
-                xanchor="center",
-                x=.5
-            )
+        yanchor="top",
+        y=0.99,
+        xanchor="left",
+        x=0.8)
     )
-#     fig5.update_layout(
-#         height=710,
-#         width = 710,
-#         showlegend=True,
-#         title_text="Race Demographics",
-#         plot_bgcolor='white',
-#         legend=dict(
-#         yanchor="top",
-#         y=0.99,
-#         xanchor="left",
-#         x=0.8)
-#     )
     
     # ===================================================
     # Plot 6: Creating a the ethnicity demographic pie chart
@@ -881,25 +880,38 @@ if uploaded_file:
                values=value), 
                row=1, col=1)
     fig6.add_trace(
-        go.Table(header=dict(values=['Ethnicity', 'Client Count']),
-             cells=dict(values=[ethnicity,value],align='center')), 
+        go.Table(columnwidth = [300,100],
+                 header=dict(values=['Ethnicity', 'Client Count']),
+                 cells=dict(values=[ethnicity,value],align='center')), 
                  row=2, col=1)
     fig6.update_traces(hoverinfo='label+percent',
                       marker=dict(colors=colors),row=1, col=1)
     fig6.update_layout(
-        height=705,
-        width = 705,
+        height=710,
+        width = 710,
         showlegend=True,
-        title_text="Ethnicity Demographics",
+        title_text="Race Demographics",
         plot_bgcolor='white',
         legend=dict(
-                orientation="h",
-                yanchor="top",
-                y= .525,
-                xanchor="center",
-                x=.5
-            )
+        yanchor="top",
+        y=0.99,
+        xanchor="left",
+        x=0.8)
     )
+#     fig6.update_layout(
+#         height=705,
+#         width = 705,
+#         showlegend=True,
+#         title_text="Ethnicity Demographics",
+#         plot_bgcolor='white',
+#         legend=dict(
+#                 orientation="h",
+#                 yanchor="top",
+#                 y= .525,
+#                 xanchor="center",
+#                 x=.5
+#             )
+#     )
     
     
    # =================================================== 
