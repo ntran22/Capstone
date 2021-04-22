@@ -501,7 +501,7 @@ def line_plots(dff):
         row=2, col=1
     )
     fig.update_layout(
-        height=700,
+        height=705,
         showlegend=False,
         title_text="Number of Individuals with a Move-In Date",
     )
@@ -526,7 +526,7 @@ def line_plots(dff):
         row=2, col=1
     )
     fig2.update_layout(
-        height=800,
+        height=705,
         showlegend=False,
         title_text="Number of Households with a Move-In Date",
     )
@@ -687,8 +687,8 @@ if uploaded_file:
     fig.update_traces(hoverinfo='label+percent',
                       marker=dict(colors=colors),row=1, col=1)
     fig.update_layout(
-        height=800,
-        width=800,
+        height=705,
+        width=705,
         showlegend=True,
         title_text="Household Destinations",
         plot_bgcolor='white',
@@ -726,7 +726,7 @@ if uploaded_file:
         row=2, col=1
     )
     fig2.update_layout(
-        height=800,
+        height=705,
         showlegend=False,
         title_text="Number of Households per Household Type",
         plot_bgcolor='white'
@@ -768,7 +768,7 @@ if uploaded_file:
         row=2, col=1
     )
     fig3.update_layout(
-        height=800,
+        height=705,
         showlegend=False,
         title_text="Number of Households per Household Type",
         plot_bgcolor='white'
@@ -800,8 +800,8 @@ if uploaded_file:
     fig4.update_traces(hoverinfo='label+percent',
                       marker=dict(colors=colors),row=1, col=1)
     fig4.update_layout(
-        height=800,
-        width = 800,
+        height=705,
+        width = 705,
         showlegend=True,
         title_text="Gender Demographics",
         plot_bgcolor='white',
@@ -837,20 +837,11 @@ if uploaded_file:
     fig5.update_traces(hoverinfo='label+percent',
                       marker=dict(colors=colors),row=1, col=1)
     fig5.update_layout(
-        height=800,
-        width = 800,
+        height=705,
+        width = 705,
         showlegend=True,
         title_text="Race Demographics",
         plot_bgcolor='white',
-# =============================================================================
-#         legend=dict(
-#                 orientation="h",
-#                 yanchor="top",
-#                 y= .525,
-#                 xanchor="center",
-#                 x=.5
-#             )
-# =============================================================================
     )
     
     # ===================================================
@@ -876,8 +867,8 @@ if uploaded_file:
     fig6.update_traces(hoverinfo='label+percent',
                       marker=dict(colors=colors),row=1, col=1)
     fig6.update_layout(
-        height=800,
-        width = 800,
+        height=705,
+        width = 705,
         showlegend=True,
         title_text="Ethnicity Demographics",
         plot_bgcolor='white',
