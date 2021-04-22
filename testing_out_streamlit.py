@@ -831,8 +831,9 @@ if uploaded_file:
                values=value), 
                row=1, col=1)
     fig5.add_trace(
-        go.Table(header=dict(values=['Race', 'Client Count']),
-             cells=dict(values=[race,value],align='center')), 
+        go.Table(columnwidth = [300,90],
+                 header=dict(values=['Race', 'Client Count']),
+                 cells=dict(values=[race,value],align='center')), 
                  row=2, col=1)
     fig5.update_traces(hoverinfo='label+percent',
                       marker=dict(colors=colors),row=1, col=1)
