@@ -7,4 +7,5 @@ sudo apt-get install xlsxwriter
 sudo apt-get install xlrd
 sudo apt-get install openpyxl
 sudo apt-get install psutil
+sudo apt-get install orca
 sudo apt-get install kaleido
