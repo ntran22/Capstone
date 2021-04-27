@@ -12,7 +12,7 @@ import numpy as np
 from fpdf import FPDF
 from tempfile import NamedTemporaryFile
 from plotly.subplots import make_subplots
-
+ a= 1
 
 # =============================================================================
 # Step 1: Go to Anaconda Prompt
