@@ -747,7 +747,7 @@ if uploaded_file:
     NumberofClients.append(len(clean[clean["Age"]>=62]))
     NumberofClients.append(len(clean[clean["Age"]==None]))
     
-    AgeRange = ['Under 5','5-12','13-17','18-24','25-34','35-44','45-54','55-62','62+','No Answer']
+    AgeRange = ['Under 5','5-12','13-17','18-24','25-34','35-44','45-54','55-61','62+','No Answer']
     
     fig3 = make_subplots(
         rows=2, cols=1,
