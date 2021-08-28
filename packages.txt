@@ -1,3 +1,4 @@
+sudo apt-get /home/appuser/venv/bin/python -m pip install --upgrade pip
 sudo apt-get install streamlit
 sudo apt-get install plotly
 sudo apt-get install fpdf
