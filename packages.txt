@@ -1,4 +1,3 @@
-sudo apt-get install pip
 sudo apt-get install streamlit
 sudo apt-get install plotly
 sudo apt-get install fpdf
